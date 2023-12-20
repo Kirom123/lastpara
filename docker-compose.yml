@@ -1,0 +1,6 @@
+services:
+  node:
+    image: nodejs:latest
+  python:
+    image: python:latest
+    
