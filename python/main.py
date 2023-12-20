@@ -1,0 +1,1 @@
+print("Roma lubit kurit")
