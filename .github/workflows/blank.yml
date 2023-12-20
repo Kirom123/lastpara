@@ -22,7 +22,7 @@ jobs:
 
     steps:
       - name: Login to GitHub Container Registry
-      - uses: actions/checkout@v3
+        uses: actions/checkout@v3
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
@@ -37,7 +37,7 @@ jobs:
 
       steps:
         - name: Login to GitHub Container Registry
-        - uses: actions/checkout@v3
+          uses: actions/checkout@v3
           with:
             registry: ghcr.io
             username: ${{ github.actor }}
