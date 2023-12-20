@@ -42,6 +42,6 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      - run: scp -o "StrictHostKeyChecking no" index.js 'kirom123-lastpara-pd7i8uumqvo#4Y2LNJREhkPi0BBDdM_iLFW0weXpYbRJ@kirom123-lastpara-pd7i8uumqvo.ssh.ws-eu107.gitpod.io':/workspace/nke-template
+      - run: scp -o "StrictHostKeyChecking no" docker-compose.yml 'kirom123-lastpara-pd7i8uumqvo#4Y2LNJREhkPi0BBDdM_iLFW0weXpYbRJ@kirom123-lastpara-pd7i8uumqvo.ssh.ws-eu107.gitpod.io':/workspace/nke-template
       - run: ssh -o "StrictHostKeyChecking no" 'kirom123-lastpara-pd7i8uumqvo#4Y2LNJREhkPi0BBDdM_iLFW0weXpYbRJ@kirom123-lastpara-pd7i8uumqvo.ssh.ws-eu107.gitpod.io' “cd /workspace/nke-template && docker compose pull && docker-compose up -d”
       
